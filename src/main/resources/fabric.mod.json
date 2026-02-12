@@ -1,0 +1,40 @@
+{
+    "schemaVersion": 1,
+    "id": "realworld",
+    "version": "${version}",
+    "name": "RealWorld",
+    "description": "Maps real-world latitude/longitude to Minecraft coordinates and shows lat/lon in the HUD and debug overlay.",
+    "authors": [
+        "RealWorld",
+        "LittleMrYang"
+    ],
+    "contact": {
+        "homepage": "https://fabricmc.net",
+        "sources": "https://github.com/LittleMrYang/Real-World"
+    },
+    "license": "MIT",
+    "icon": "assets/realworld/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "com.realworld.RealWorldMod"
+        ],
+        "client": [
+            "com.realworld.RealWorldModClient"
+        ]
+    },
+    "mixins": [
+        "realworld.mixins.json",
+        {
+            "config": "realworld.client.mixins.json",
+            "environment": "client"
+        }
+    ],
+    "depends": {
+        "fabricloader": ">=0.18.2",
+        "minecraft": "~1.21.11",
+        "java": ">=21",
+        "fabric-api": "*"
+    },
+    "suggests": {}
+}
