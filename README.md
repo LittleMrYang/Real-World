@@ -28,7 +28,8 @@ A Fabric mod example that maps real-world latitude/longitude to Minecraft block 
 
 Versions are managed in `gradle.properties`.
 
-## Common Commands (PowerShell)
+## Common Commands (PowerShell & Shell)
+*Powershell can use `./gradlew.bat`*
 1. Build: `./gradlew build`
 2. Run client: `./gradlew runClient`
 3. Run server: `./gradlew runServer`
